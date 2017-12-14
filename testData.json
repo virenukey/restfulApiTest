@@ -1,0 +1,32 @@
+{ "url1": 
+   {"url":"http://services.groupkt.com/country/get/all",
+    "params": null,
+    "headers": null,
+    "body": null,
+    "cookies": null,
+    "method":"get"
+   },
+  "url2": 
+   {"url":"http://del.icio.us/api/peej/bookmarks",
+    "params": {
+    	"start":1, 
+    	"end":2
+     },
+    "headers": null,
+    "body": null,
+    "cookies": null,
+    "method":"get"
+   },
+   "url3": 
+   {"url":"https://reqres.in/api/users",
+    "params": null,
+    "headers": null,
+    "body": null,
+    "data": null,
+    "method":"post",
+    "json": {
+    	"name": "morpheus",
+    	"job": "leader"
+	 }
+	}
+ } 
