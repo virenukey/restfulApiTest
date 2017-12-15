@@ -50,6 +50,7 @@ Components
 5. Class TestData: This is to create object in each test case to bring all test data into test case
 6. scripts: Consists of individual test cases
 7. testSuits: To run test suites
+8. constructURL: Constructs the REST URL
 
 Run a test
 ==========
