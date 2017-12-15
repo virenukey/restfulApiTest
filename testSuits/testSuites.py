@@ -4,7 +4,7 @@ from nose.loader import TestLoader
 from nose import run
 from nose.suite import LazySuite
 
-paths = ("E:\\pythonpractice\\apiautomation\\scripts")
+paths = ("E:\\python\\apiautomation\\scripts")
 
 def run_my_tests():
     all_tests = ()

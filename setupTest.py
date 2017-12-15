@@ -1,2 +1,2 @@
-setupTest = {'location': "E:\\pythonpractice\\apiautomation\\", 
+setupTest = {'location': "E:\\python\\apiautomation\\", 
          'fileName': "testData.json" }
