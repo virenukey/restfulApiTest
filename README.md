@@ -52,6 +52,11 @@ Components
 7. testSuits: To run test suites
 8. constructURL: Constructs the REST URL
 
+Example Test case
+=================
+Please refer following example test case to write GET request test in this framework
+-exampleTest.py
+
 Run a test
 ==========
 Individual test case can be run using command:
