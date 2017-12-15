@@ -69,3 +69,9 @@ Limitations
 1. Parses only json type response
 2. Need to incorporate REST PUT and DELETE methods
 
+Enhancements
+=============
+1. Test Data fileshould be common for each test or test suites
+2. Doc strings need to be implemented
+3. Coding standards need to be implemented
+
