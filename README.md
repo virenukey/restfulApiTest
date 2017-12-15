@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 RESTFul API Test
 ================
 
@@ -57,5 +56,10 @@ Run a test
 Individual test case can be run using command:
 => nosetests –v testcase2.py
 Similarly test suites can be run smilarly from testSuits folder
+
+Limitations
+=============
+1. Parses only json type response
+2. Need to incorporate REST PUT and DELETE methods
 
 "# restfulApiTest" 
