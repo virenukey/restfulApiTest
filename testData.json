@@ -1,5 +1,6 @@
 { "url1": 
-   {"url":"http://services.groupkt.com/country/get/all",
+   {"baseurl":"http://services.groupkt.com",
+   	"path": "/country/get/all",
     "params": null,
     "headers": null,
     "body": null,
