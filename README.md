@@ -33,28 +33,28 @@ Note: As of now this framework only supports APIs whose responsetype is JSON.
 Prerequisites
 ================
 Using Python pip install following packages:
-=> pip install nose
-=> pip install requests
-=> pip install requests_oauthlib
+1. pip install nose
+2. pip install requests
+3. pip install requests_oauthlib
 
 Note: framework has been developed run and verified on 64 bit Windows platform. To run on Linux, please port following things accordingly
-=> setupTest.py
-=> testSuites.py
+1. setupTest.py
+2. testSuites.py
 
 Components
 ===========
-=> Class Api : This is base class wrapper for all Rest API methods (GET, POST, PUT, DELETE)
-=> Class ApiAuth: This clild to Api for API authentications
-=> testData.json : This is file to define your test data for each test case in json format
-=> setupTest.py : This define path to your test data file
-=> Class TestData: This is to create object in each test case to bring all test data into test case
-=> scripts: Consists of individual test cases
-=> testSuits: To run test suites
+1. Class Api : This is base class wrapper for all Rest API methods (GET, POST, PUT, DELETE)
+2. Class ApiAuth: This clild to Api for API authentications
+3. testData.json : This is file to define your test data for each test case in json format
+4. setupTest.py : This define path to your test data file
+5. Class TestData: This is to create object in each test case to bring all test data into test case
+6. scripts: Consists of individual test cases
+7. testSuits: To run test suites
 
 Run a test
 ==========
 Individual test case can be run using command:
-=> nosetests –v testcase2.py
+1. nosetests –v testcase2.py
 Similarly test suites can be run smilarly from testSuits folder
 
 Limitations
