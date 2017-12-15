@@ -54,7 +54,8 @@ Components
 Run a test
 ==========
 Individual test case can be run using command:
-1. nosetests –v testcase2.py
+- nosetests –v testcase2.py
+
 Similarly test suites can be run smilarly from testSuits folder
 
 Limitations
@@ -62,4 +63,3 @@ Limitations
 1. Parses only json type response
 2. Need to incorporate REST PUT and DELETE methods
 
-"# restfulApiTest" 
