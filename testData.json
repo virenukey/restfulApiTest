@@ -29,5 +29,18 @@
     	"name": "morpheus",
     	"job": "leader"
 	 }
-	}
+	},
+	"url4":
+	{"baseurl":"https://reqres.in/",
+   	"path": "/api/users/2",
+    "params": null,
+    "headers": null,
+    "body": null,
+    "cookies": null,
+    "json": {
+    	"name": "morpheus",
+    	"job": "zion resident"
+	 },
+    "method":"put"
+   }
  } 

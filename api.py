@@ -12,15 +12,19 @@ class Api(object):
             print("Exception occurred in get request", e)
         return r
                     
-    def post(self, data=None, json=None, headers=None, files=None, timeout=None):
+    def post(self, data=None, json=None, headers=None, files=None, timeout=None, auth=None):
         try:
-            r = requests.post(self.url, data=data, json=json, headers=headers, files=files, timeout=timeout)
+            r = requests.post(self.url, data=data, json=json, headers=headers, files=files, auth=auth, timeout=timeout, verify=True)
         except Exception as e:
             print("Exception occurred in post request", e)
         return r
     
-    def put(self):
-        pass
+    def put(self, data=None, json=None, headers=None, files=None, timeout=None, auth=None):
+        try:
+            r = requests.put(self.url, data=data, json=json, headers=headers, files=files, auth=auth, timeout=timeout, verify=True)
+        except Exception as e:
+            print("Exception occurred in put request", e)
+        return r
     
     def delete(self):
         pass
