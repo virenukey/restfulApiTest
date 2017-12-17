@@ -19,7 +19,7 @@ code organization, abstraction and some of the other benefits that
 are generally available with programmatic frameworks. 
 Programmatically building test cases provides the highest level
 of flexibility and sophistication. 
-This framework supports HTTP/HTTPS RestAPI calls. All available Authentication supports (including OAUTH)
+This framework supports HTTP/HTTPS RestAPI calls including all available Authentication support (OAuth, HttpBasicAuth, HttpDigestAuth)
 
 Note: As of now this framework only supports APIs whose responsetype is JSON.
 
@@ -55,19 +55,19 @@ Components
 Example Test case
 =================
 Please refer following example test case to write GET request test in this framework
--exampleTest.py
+- exampleTest.py
 
 Run a test
 ==========
 Individual test case can be run using command:
-- nosetests –v testcase2.py
+- nosetests –v exampleTest.py
 
 Similarly test suites can be run smilarly from testSuits folder
 
 Limitations
 =============
 1. Parses only json type response
-2. Need to incorporate REST PUT and DELETE methods
+2. Need to incorporate REST DELETE methods
 
 Enhancements
 =============
