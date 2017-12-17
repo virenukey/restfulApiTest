@@ -1,4 +1,7 @@
-import requests
+try:
+    import requests
+except ImportError as e:
+    print ("Import of module in test failed", e)
 
 class Api(object):
     def __init__(self, url):
