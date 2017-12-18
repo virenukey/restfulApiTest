@@ -8,7 +8,8 @@ class TestData(object):
   
     def data(self):
         try:
-            test_data = open(self.location+self.fileName, 'r')
+            fileName = self.location+'\\'+self.fileName
+            test_data = open(fileName, 'r')
         except Exception as e:
             print ("Issue with test data file", e)
         json_str = json.load(test_data)
