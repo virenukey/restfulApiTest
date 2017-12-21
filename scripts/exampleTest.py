@@ -6,6 +6,7 @@ try:
     import constructURL
     import re
     import logging
+    import sys
 except ImportError as e:
     print ("Import of module in test failed", e)
 
@@ -19,7 +20,7 @@ class ExampleTest(unittest.TestCase):
         try:
             testData = TestData(location=setuptest['location'], 
                                 fileName=setuptest['fileName'])
-            
+                        
             json_str = testData.data()
             return json_str
         except Exception as e:
@@ -37,17 +38,22 @@ class ExampleTest(unittest.TestCase):
                 url = json_str['url1']['baseurl']
                 
             req = Api(url=url)
-            
+                        
             log.debug("Check response of GET Request")
             resp = req.get()
+            print "Checking response type"
+            print type(resp)
             self.assertEqual(200, resp.status_code)
-            log.debug("Verifying response type is json")
-            response_type = resp.headers["content-type"]
-            if re.search(r'json', response_type):
-                response = resp.json()
         except Exception as e:
             print ("Exception occurred during test run", e)
-        
+            
+        log.debug("Verifying response type is json")
+        response_type = resp.headers["content-type"]
+        if re.search(r'json', response_type):
+            response = resp.json()
+        else:
+            sys.exit()
+          
         log.debug("Finally verify test case expected output")        
         self.assertEqual("Afghanistan", response['RestResponse']['result'][0]['name'])
         
