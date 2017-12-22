@@ -67,11 +67,15 @@ Similarly test suites can be run smilarly from testSuits folder
 Limitations
 =============
 1. Parses only json type response
-2. Need to incorporate REST DELETE methods
 
 Enhancements
 =============
 1. Test Data fileshould be common for each test or test suites
 2. Doc strings need to be implemented
 3. Coding standards need to be implemented
+
+Created by
+============
+- Virendra Ukey
+- Email : viruukey@gmail.com
 
